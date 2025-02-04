@@ -953,7 +953,7 @@ form div{
     .imagenes-exp{  
         display: grid;
         grid-template-rows: 1fr 1fr 1fr ;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
         margin: 2rem;
         width: 50%;
         height: 75%;
