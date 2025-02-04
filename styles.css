@@ -908,9 +908,9 @@ form div{
         height: 100%;
     }
 
-    .parrafo{
+    .large{
         font-size: 10vw;
-
+        word-break: break-word;
     }
     .p-serv{
         height: 120px;
