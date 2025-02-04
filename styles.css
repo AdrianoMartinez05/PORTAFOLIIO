@@ -834,9 +834,13 @@ form div{
         margin: 0; /* Asegúrate de que no haya margen predeterminado */
         font-size: 3vh;
     }
+    .c1{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
     .c2{
         grid-row: 1/2;
-        grid-column: 1/2;     
+        grid-column: 2/3;     
     }
     .c3{
         grid-row: 2/3;
