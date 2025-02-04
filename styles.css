@@ -917,7 +917,6 @@ form div{
     }
     .div-exp{
         flex-direction: column;
-
     }
     .text-exp{
         width: 100%;
@@ -952,12 +951,12 @@ form div{
     }
 
     .imagenes-exp{  
-        /* display: grid; */
+        display: grid;
         grid-template-rows: 1fr 1fr 1fr ;
         grid-template-columns: 1fr;
         margin: 2rem;
-        /* width: 50%;
-        height: 75%; */
+        width: 50%;
+        height: 75%;
     }
     .tc1{
         grid-row: 1/2;
