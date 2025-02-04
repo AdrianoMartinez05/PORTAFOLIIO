@@ -908,10 +908,10 @@ form div{
         height: 100%;
     }
 
-    .large{
+    /* .large{
         font-size: 10vw;
         word-break: break-word;
-    }
+    } */
     .p-serv{
         height: 120px;
     }
