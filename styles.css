@@ -851,6 +851,12 @@ form div{
         grid-column: 2/3;
     }
     
+    .price{
+        font-size: 20vw;
+    }
+    .btn-ws{
+        font-size: 6vw;
+    }
 
     .footer{
         width: 100%;
