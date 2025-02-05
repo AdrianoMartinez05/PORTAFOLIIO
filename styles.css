@@ -918,6 +918,11 @@ form div{
         height: 100%;
     }
 
+    .article {
+
+        width: 95%;
+ 
+    }
     /* .large{
         font-size: 10vw;
         word-break: break-word;
