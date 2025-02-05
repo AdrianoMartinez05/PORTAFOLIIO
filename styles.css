@@ -444,8 +444,7 @@ main{
 }
 .p-exp{
     display: flex;
-    margin: 20px;
-    
+    margin: 20px;   
 }
 .text-exp {
 width: 50%;
@@ -585,7 +584,13 @@ text-align: center;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;   
+
+    
 }
+.parrafo-large{
+    padding-bottom: 5rem;
+}
+
 .p-serv{
     height: 80px;
 }
@@ -647,7 +652,7 @@ form div{
     font-size: 4rem;
     font-weight: 600;
     margin-top: 2rem;
-    margin-bottom: 6rem;
+
 }
 
 .btn-ws{
@@ -856,6 +861,7 @@ form div{
     }
     .btn-ws{
         font-size: 6vw;
+
     }
 
     .footer{
@@ -991,9 +997,39 @@ form div{
     .tc3{
         grid-row: 3/4;
     }
+    .field{
+    padding: 2rem;
+    width: 120%;
+        margin-left: -3rem;
+        margin-right: -3rem;
+    }
+    /* .large{
+        margin
+    } */
+    .p-exp{
+        margin: 0px; 
+        /* padding-bottom: 5rem; */
+        text-align: center ;
+        /* text-align: justify; */
+        /* text-align-last: center;   */
+    }
 
+    .info-c{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .dato{
+        font-size: 10vw;
+        margin-bottom: 0rem;
+    }
 }
-
+.dato{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+textarea{
+    resize: none;
+}
 @media (max-height: 650px ) { 
 
    /* .hero--text{
