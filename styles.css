@@ -970,10 +970,11 @@ form div{
     }
 
     .tarjeta-circulo{
-/* 
+/*  
         height:16rem;
         width: 16rem; */
         padding: 30vw;
+        display: none;
 
     }
     .tc1{
