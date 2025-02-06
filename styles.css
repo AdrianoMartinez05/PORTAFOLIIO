@@ -444,7 +444,7 @@ main{
 }
 
 .p-exp{
-    display: flex;
+
     margin: 20px;   
 }
 .text-exp {
@@ -1180,7 +1180,7 @@ textarea{
 }
 
 mark {
-    --color1: rgb(0, 255, 251);
+    --color1: rgb(0, 242, 255);
     --color2: rgb(0, 251, 255);
     --bg-height: 40%;
       
@@ -1200,6 +1200,8 @@ mark {
       background-size: 100% var(--bg-height);
     }
   }
+  
+  
   
   .invisible{
     display: none;
