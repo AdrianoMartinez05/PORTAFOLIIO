@@ -437,11 +437,12 @@ main{
 }
 .imagenes-exp{  
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     width: 50%;
-    height: 75%;
+    padding: 3rem;
 }
+
 .p-exp{
     display: flex;
     margin: 20px;   
@@ -452,32 +453,57 @@ margin: 20px;
 padding: 3rem;
 border-radius: 10px;
 margin: 3rem;
-height: 70%;
 
 box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.28),0px 20px 20px rgba(0, 0, 255, 0.256);
 
 }
+
+/* .cuad{
+    padding:3rem;
+    background-color: #d32525;
+    width: 50%;
+} */
+
+
+
 .tarjeta-circulo{
-    background-color: blue;
-    height:16rem;
-    width: 16rem;
-    padding: 16rem;
-    border-radius: 100%;
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%; 
+    /* margin: 2rem; */
+    /* padding: 2rem; */
+    /* border-radius: 100%; */
+    
 }
-.tc1{
+.body-c1{
     grid-row: 1/4;
-    grid-column: 1/4;
+}
+.body-c2{
+    grid-row: 3/6;
+}
+.body-c3{
+    grid-row: 5/8;
+}
+
+
+.tc1{
+    width: 90%;
+    height: 100%;
     background-image: url(./img1.jpg);
+    border-radius: 100%;
+    
 }
 .tc2{
-    grid-row: 3/6;
-    /* grid-column: 4/7; */
+    width: 90%;
+    height: 100%;
     background-image: url(./img1.jpg);
+    border-radius: 100%;
 }
 .tc3{
-    grid-row: 5/9;
-    grid-column: 1/4;
+    width: 90%;
+    height: 100%;
     background-image: url(./img1.jpg);
+    border-radius: 100%;
 }
 
 
@@ -588,7 +614,7 @@ text-align: center;
     
 }
 .parrafo-large{
-    padding-bottom: 5rem;
+    padding-bottom: 0rem;
 }
 
 .p-serv{
@@ -942,7 +968,8 @@ form div{
     .text-exp{
         width: 100%;
         margin: 0rem;
-
+        height: 70%;
+    
     }
     .text-exp h1{
         flex-direction: column;
@@ -971,24 +998,24 @@ form div{
         font-size: 12vw;
     }
 
-    .imagenes-exp{  
+    /* .imagenes-exp{  
         display: grid;
         grid-template-rows: 1fr 1fr 1fr ;
-        /* grid-template-columns: 1fr; */
+        grid-template-columns: 1fr;
         margin: 2rem;
         width: 50%;
         height: 75%;
-    }
+    } */
 
-    .tarjeta-circulo{
+    /* .tarjeta-circulo{
 /*  
         height:16rem;
         width: 16rem; */
-        padding: 30vw;
+        /* padding: 30vw;
         display: none;
 
-    }
-    .tc1{
+    } */ 
+    /* .tc1{
         grid-row: 1/2;
     }
     .tc2{
@@ -996,6 +1023,38 @@ form div{
     }
     .tc3{
         grid-row: 3/4;
+    } */
+
+    .imagenes-exp{  
+
+            grid-template-rows:1fr 1fr 1fr ;
+        grid-template-columns: 1fr ;
+        display: grid;
+width: 55%;
+height: 100%;
+        padding: 3rem;
+    
+    }
+    .body-c1{
+        grid-row: 1/2;
+    }
+    .body-c2{
+        grid-row: 2/3;
+    }
+    .body-c3{
+        grid-row: 3/4;
+    }
+
+
+    .tc1{
+        padding: 100%;
+        
+    }
+    .tc2{
+        padding: 100%;
+    }
+    .tc3{
+        padding: 100%;
     }
     .field{
     padding: 2rem;
@@ -1066,6 +1125,11 @@ form div{
 
 }
 
+
+    .parrafo-large{
+        padding-bottom: 5rem;
+    }
+    
 
 }
 .dato{
