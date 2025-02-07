@@ -15,7 +15,7 @@
     --fuenteNueva: "Inter", serif ;
 }
 
-/* #region box model*/
+
 
 html {  
     box-sizing: border-box;
@@ -29,7 +29,7 @@ html {
     padding: 0;
 }
 
-/* #endregion */
+
 
 /* #region Header */
 
@@ -203,6 +203,8 @@ header {
     font-optical-sizing: auto;
     background-color: bkl;
     font-style: normal;
+    margin: 0.2rem;
+
 }
 
 .hero {
