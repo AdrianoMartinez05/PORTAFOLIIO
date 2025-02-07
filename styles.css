@@ -15,10 +15,7 @@
     --fuenteNueva: "Inter", serif ;
 }
 
-
-
-
-
+/* #region box model*/
 
 html {  
     box-sizing: border-box;
@@ -32,6 +29,9 @@ html {
     padding: 0;
 }
 
+/* #endregion */
+
+/* #region Header */
 
 header {
     margin: 0;
@@ -42,7 +42,7 @@ header {
     height: 100vh;
     min-height:30% ;
     width: 100%;
-    position: relative; /* Add this */
+    position: relative;
 }
 
 .grid-bar {
@@ -188,27 +188,20 @@ header {
     animation-fill-mode: both;
   }
 
-
- 
 .about{
     width: 100%;
-
     grid-column: 2/4;
     grid-row: 3/4; 
-
-
-    
-    /* border:1px solid rgba(255, 255, 255, 0.18); */
-    /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); */
 }
+
 .about-text{
     grid-column: 2/4;
     grid-row: 3/4;
-    font-size: 2rem;
-    font-weight: 350;
+    font-size: 3rem;
+    font-weight: 600;
     font-family: var(--fuenteNueva);
     font-optical-sizing: auto;
-
+    background-color: bkl;
     font-style: normal;
 }
 
@@ -298,7 +291,9 @@ header {
     left: 0; /* Add this */
     z-index: 1; /* Add this */
 }
+/* #endregion */
 
+/* #region Footer */
 .footer{
     width: 100%;
     height: 340px;
@@ -378,9 +373,7 @@ header {
     font-size: 14px  ; 
     color: white;
 }
-
-
-
+/* #endregion */
 
 
 
@@ -396,12 +389,6 @@ main{
     width: 80%;
     height: 100vh;  
 }
-.article-1{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
 .titulo{
     font-size: 100px;
     font-family: var(--fuenteNueva);
@@ -411,7 +398,7 @@ main{
 }
 .blue{
     color: blue;
-    margin-left: 20px;
+
 }
 
 .sub-titulo{
@@ -421,155 +408,11 @@ main{
     color: var(--primario);
 }
 
-/* .parrafo{
-    font-size: 3rem;
-} */
-
-.article-2{
+/* #region Cursos */
+.article-1{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-}
-.div-exp{
-    display: flex;
-    flex-direction: row;
-
-}
-.imagenes-exp{  
-    display: grid;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr ;
-    width: 50%;
-    padding: 3rem;
-}
-
-.p-exp{
-
-    margin: 20px;   
-}
-.text-exp {
-width: 50%;
-margin: 20px;
-padding: 3rem;
-border-radius: 10px;
-margin: 3rem;
-
-box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.28),0px 20px 20px rgba(0, 0, 255, 0.256);
-
-}
-
-/* .cuad{
-    padding:3rem;
-    background-color: #d32525;
-    width: 50%;
-} */
-
-
-
-.tarjeta-circulo{
-    /* background-color: blue; */
-    height: 100%;
-    width: 100%; 
-    /* margin: 2rem; */
-    /* padding: 2rem; */
-    /* border-radius: 100%; */
-    
-}
-.body-c1{
-    grid-row: 1/4;
-}
-.body-c2{
-    grid-row: 3/6;
-}
-.body-c3{
-    grid-row: 5/8;
-}
-
-
-.tc1{
-    width: 90%;
-    height: 100%;
-    background-image: url(./img1.jpg);
-    border-radius: 100%;
-    
-}
-.tc2{
-    width: 90%;
-    height: 100%;
-    background-image: url(./img1.jpg);
-    border-radius: 100%;
-}
-.tc3{
-    width: 90%;
-    height: 100%;
-    background-image: url(./img1.jpg);
-    border-radius: 100%;
-}
-
-
-
-.large-btn{
-    width: 100%;
-    justify-content: center;
-
-}
-
-.article-3{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.article-4{
-    background-color: white;
-    height: 80vh ;
-}
-
-
-.tarjeta-plan{
-    background-color: #FFF;
-    width: 500px;
-    height: 700px;
-    padding: 3rem;
-    border-radius: 10px;
-    margin: 3rem;
-
-    box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.28),0px 20px 20px rgba(0, 0, 255, 0.256);
-}
-
-.planes{
-    display: flex;
-}
-
-.rango-plan{
-    font-family: var(--fuenteNueva);
-    font-size: 5rem;
-    color: var(--primario);
-    text-align: center;
-    margin: 2rem;
-    font-weight: 300;
-    font-optical-sizing: auto;
-
-    font-style: normal;
-}
-
-div ul{
-    height: 50%;
-}
-
-div ul li{
-    font-family: var(--fuenteNueva);
-    font-size: 2rem;
-    list-style: none;
-    text-align: center;
-
-    font-weight: 300;
-    font-optical-sizing: auto;
-    font-style: normal;
-     margin: 1rem;
-    box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.28);
-    padding: 1rem;
-
 }
 .price{
     font-size: 80px;
@@ -621,37 +464,138 @@ text-align: center;
     height: 80px;
 }
 
+/* #endregion */
 
-.btn{
+/* #region Experiencia */
+.article-2{
     display: flex;
-    background-color: var(--primario);
-    color:var(--terciario);
-    padding: 2rem;
-    border-radius: 12.36px;
-    font-size: 2rem;
-    text-decoration: none;
-    margin:3rem;
+    flex-direction: column;
+    gap: 3rem;
+}
+.div-exp{
+    display: flex;
+    flex-direction: row;
+
+}
+.imagenes-exp{  
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    width: 50%;
+    padding: 3rem;
+}
+
+.p-exp{
+
+    margin: 20px;   
+}
+.text-exp {
+width: 50%;
+margin: 20px;
+padding: 3rem;
+border-radius: 10px;
+margin: 3rem;
+
+box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.28),0px 20px 20px rgba(0, 0, 255, 0.256);
+
+}
+
+
+.tarjeta-circulo{
+    height: 100%;
+    width: 100%;    
+}
+.body-c1{
+    grid-row: 1/4;
+}
+.body-c2{
+    grid-row: 3/6;
+}
+.body-c3{
+    grid-row: 5/8;
+}
+
+
+.tc1{
+    width: 90%;
+    height: 100%;
+    background-image: url(./img1.jpg);
+    border-radius: 100%;
+    
+}
+.tc2{
+    width: 90%;
+    height: 100%;
+    background-image: url(./img1.jpg);
+    border-radius: 100%;
+}
+.tc3{
+    width: 90%;
+    height: 100%;
+    background-image: url(./img1.jpg);
+    border-radius: 100%;
+}
+/* #endregion  */
+
+/* #region Planes */
+.article-3{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.tarjeta-plan{
+    background-color: #FFF;
+    width: 500px;
+    height: 700px;
+    padding: 3rem;
+    border-radius: 10px;
+    margin: 3rem;
+
+    box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.28),0px 20px 20px rgba(0, 0, 255, 0.256);
+}
+
+.planes{
+    display: flex;
+}
+
+.rango-plan{
     font-family: var(--fuenteNueva);
+    font-size: 5rem;
+    color: var(--primario);
+    text-align: center;
+    margin: 2rem;
+    font-weight: 300;
     font-optical-sizing: auto;
-    align-self: flex-end;
+
     font-style: normal;
-
-
-}
-.btn:hover{
-    color: #ffffff;
-    animation-duration: 0.9s;
-    transition-delay: 0.1s;
-
 }
 
+div ul{
+    height: 50%;
+}
 
-.t{
+div ul li{
+    font-family: var(--fuenteNueva);
+    font-size: 2rem;
+    list-style: none;
+    text-align: center;
 
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-style: normal;
+     margin: 1rem;
+    box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.28);
+    padding: 1rem;
 
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: row;    
+}
+
+/* #endregion  */
+
+/* #region Contacto */
+.article-4{
+    background-color: white;
+    height: 80vh ;
 }
 
 
@@ -692,6 +636,61 @@ form div{
     align-items: center;
     text-decoration: none;
 }
+
+.dato{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    margin: 2rem;
+}
+textarea{
+    resize: none;
+}
+/* #endregion  */
+
+
+
+
+/* #region BLUE BUTTONS */
+.btn{
+    display: flex;
+    background-color: var(--primario);
+    color:var(--terciario);
+    padding: 2rem;
+    border-radius: 12.36px;
+    font-size: 2rem;
+    text-decoration: none;
+    margin:3rem;
+    font-family: var(--fuenteNueva);
+    font-optical-sizing: auto;
+    align-self: flex-end;
+    font-style: normal;
+
+
+}
+.btn:hover{
+    color: #ffffff;
+    animation-duration: 0.9s;
+    transition-delay: 0.1s;
+
+}
+.t{
+
+
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;    
+}
+.large-btn{
+    width: 100%;
+    justify-content: center;
+
+}
+/* #endregion */
+
+
+
+
+
 
 @media (max-width: 1024px) {
 
@@ -799,7 +798,7 @@ form div{
 
     .hero--text {
         display: grid;
-        grid-template-rows: 0.1fr 0.1fr 0.5fr 0.1fr 0.2fr  1.5fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.2fr  1fr;
         grid-template-columns: 1fr;
         width: 100%;
         height: 100%;
@@ -1132,14 +1131,7 @@ height: 100%;
     
 
 }
-.dato{
-    font-size: 4rem;
-    margin-bottom: 3rem;
-    
-}
-textarea{
-    resize: none;
-}
+
 @media (max-height: 650px ) { 
 
    /* .hero--text{
@@ -1179,6 +1171,8 @@ textarea{
 
 }
 
+
+/* #region Highlight */
 mark {
     --color1: rgb(0, 242, 255);
     --color2: rgb(0, 251, 255);
@@ -1248,4 +1242,4 @@ mark {
     animation-fill-mode: both;
   }
 
-
+/* #endregion */
