@@ -885,8 +885,9 @@ textarea{
         font-size: 20vw;
     }
     .btn-ws{
-        font-size: 6vw;
-
+        font-size: 8vw;
+        /* width: 100%; */
+        margin: 1rem;
     }
 
     .footer{
