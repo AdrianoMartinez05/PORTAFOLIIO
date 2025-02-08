@@ -89,6 +89,7 @@ header {
 }
 
 .hero--text {
+            
         grid-column: 1 / 5;
         grid-row: 4 / 5;
         display: flex;
@@ -100,7 +101,8 @@ header {
         text-align: center; /* Para que el texto esté centrado */
         font-size: 7vw; /* Ajusta el tamaño del texto basado en el ancho de la ventana */
         position: relative; /* Add this */
-        z-index: 2; /* Add this */
+        z-index: 2; 
+        /* Add this */
         font-family: var(--fuenteNueva);
         font-optical-sizing: auto;
 
@@ -204,7 +206,7 @@ header {
     background-color: bkl;
     font-style: normal;
     margin: 0.2rem;
-
+    height: 150%;
 }
 
 .hero {
@@ -806,8 +808,9 @@ textarea{
         align-items: center;
         font-size: 10vw;
         max-width: 100%;
-        word-break: break-word;
+        /* word-break: break-word; */
         grid-row: 2 / 3;
+        
     }
     .tarjeta-servicio h3{
         font-size: 3rem;
